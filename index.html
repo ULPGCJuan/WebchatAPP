@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat and Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/privatechat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</head>
+<body>
+
+<!-- Modalto put your name -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <label for="username">Choose your username:</label>
+        <input type="text" id="username" />
+        <button onclick="saveUsername()">Guardar</button>
+    </div>
+</div>
+
+<!-- Welcome Bar -->
+<header>
+    <div id="welcomeMessage"></div>
+</header>
+
+<!-- Contenido de la página -->
+<section>
+    <p>Welcome to the second assignment of Network Centric Computing!</p>
+    <!-- Imagen centrada -->
+    <div class="centered-image">
+        <img src="picture1.jpg" alt="Picture 1">
+    </div>
+    <!-- Índices -->
+    <h2>Indexes:</h2>
+    <ul>
+        <li><a href="#generalChat">General Chat</a></li>
+        <li><a href="#privateChat">Private Chat</a></li>
+    </ul>
+
+    <!-- General Chat -->
+    <div id="generalChat">
+        <h2>General Chat</h2>
+        <div id="user-list">Users online: <span id="user-count">0</span></div>
+        <div id="chat-messages"></div>
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- Private Chat -->
+    <div id="privateChat">
+        <div id="user-list2-container">
+            <h2>Private Chat</h2>
+            <div id="activeUsers">Select a user to talk with:</div>
+            <ul id="user-list2"></ul>
+        </div>
+        <div id="privateChatMessages"></div>
+        
+    </div>
+
+</section>
+
+
+<script src="\node_modules\socket.io\client-dist\socket.io.js" ></script>
+<script src="client.js" ></script>
+
+
+</body>
+</html>

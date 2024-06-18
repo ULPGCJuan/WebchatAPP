@@ -1,0 +1,45 @@
+/* Agrega estilos al panel lateral y la lista de usuarios */
+#privateChat {
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-list2-container {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+#user-list2-container {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+}
+
+#user-list2 li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#user-list2 li:hover {
+    text-decoration: underline;
+}
+
+.private-chat-header {
+    font-weight: bold;
+}
+
+.private-chat-container {
+    margin-top: 10px;
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
+    display:flex;
+}
+
+#privateChatMessages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 50%;
+}

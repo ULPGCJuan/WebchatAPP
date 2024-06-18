@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "nodemon http-server -c 1"
+  }, 
+  "name": "pene",
+  "version": "1.0.0",
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
